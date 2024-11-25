@@ -423,7 +423,13 @@
 					<div class="project-links">
 						<a href="https://scholar.google.com/citations?user=Gs_EugkAAAAJ&hl=en" target="_blank">Paper</a>; 
 					</div>
+					<div class="project-description">  The gaze vector represents the direction in which the user is looking and is a key component of our methodology. Instead of physically altering the eye-tracking apparatus or its orientation, we repurpose the gaze vector data to visualize eye movements on the overview displays. Specifically, we project the gaze vector onto the large, uncalibrated screens within the control room environment.</div>
+				        <div class="project-description">  To achieve this, we integrate the gaze vector with a 3D model of the control room. The 3D model is created using photogrammetry, a technique that uses multiple photographs taken from different angles to reconstruct an accurate model of the space. Once the model is built, we employ ray casting, a technique common in computer graphics, to simulate the gaze direction. Ray casting involves projecting rays from the origin of the gaze vector into the 3D space and determining the points where these rays intersect with the 3D model. We use the PyVista visualization toolkit in Python to implement this technique.</div>
+				        <div class="project-description">  The intersection points of the gaze vector with the 3D model are visualized by rendering them as small spheres within the 3D environment. This visualization allows us to accurately trace operators' gaze paths as they interact with different displays in the control room, including the large overview displays</div>
+				        <div class="project-description">  To validate this methodology, we conducted experiments using a setup designed to emulate a collaborative control room environment with multi-screen displays. This setup consisted of three 22-inch monitors arranged in a triple-monitor configuration (calibrated with the eye tracker) and a 170-inch projector screen (used as the overview display), placed 52 cm away from the center monitor. The eye tracker, equipped with three infrared cameras, tracked eye movements across this configuration</div>
+				        <div class="project-description">  Human-subject studies were conducted to evaluate the accuracy and precision of the proposed methodology. These studies demonstrate the effectiveness of our approach in capturing and visualizing gaze patterns in collaborative control rooms, providing a foundation for further research in understanding operator behavior in complex, multi-screen environments</div> 
 				</div>
+				
 				<!--Project 1: END-->
 				
 				<!--Project 2: START-->
