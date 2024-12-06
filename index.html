@@ -340,7 +340,8 @@
 		<div class="scroll-menu">
 			<a href="#about" class="scroll-links">About</a>
 			<a href="#publications" class="scroll-links">Publications</a>
-			<a href="#projects" class="scroll-links">Projects</a>
+			<a href="#projects" class="scroll-links">Research Projects</a>
+			<a href="#projects" class="scroll-links">Academic Projects</a>
 			<a href="#skills" class="scroll-links">Skills</a>
 			<a href="#competitive" class="scroll-links">Examinations</a>
 			<a href="#contact" class="scroll-links last-link">Contact</a>
@@ -479,7 +480,7 @@
 			</section>
 <!----------------------------------------------------RESEARCH PROJECTS END---------------------------------------------------------------------------------------->	
 
-<!----------------------------------------------------OTHER PROJECTS END---------------------------------------------------------------------------------------->	
+<!----------------------------------------------------ACADEMIC PROJECTS START---------------------------------------------------------------------------------------->	
 			<h1 class="heading" id="projects" name="projectsml">Academic Projects</h1>
 			<section class="grid-collection">
 				
@@ -513,62 +514,111 @@
 					</div>
 				</div>
 
-					<div class="image-container">
-						<img src="images/b-tech_pic2.jpg" alt="Project Image" class="project-image">					
-					</div>
-					<div class="project-description">
-						<b>Objective:</b> The project aimed to decode wrist movements using Magnetoencephalography (MEG) signals for Brain-Computer Interface (BCI) applications. The goal was to enable assistive technologies for individuals with neuromuscular disorders, improving their ability to interact with external devices.
-						<br><br>
-						<b>Methodology:</b> 
-						<ul>
-							<li><b>Data Source:</b> MEG signals were sourced from Dataset 3 of the BCI Competition IV, recorded during wrist movements in four directions: right, left, back, and forth.</li>
-							<li><b>Signal Processing:</b> The MEG data was preprocessed to remove noise and artifacts. Multi-resolution statistical features like energy, IQR, COVFF, and NCV were extracted using Wavelet Packet Transform (WPT) and Discrete Wavelet Transform (DWT).</li>
-							<li><b>Feature Selection:</b> Principal Component Analysis (PCA) was applied to rank and select the most relevant features for classification.</li>
-							<li><b>Classification:</b> The Mahalanobis Distance-Based Classifier was utilized for classifying the data. This classifier works by measuring the distance between a given data point and the mean of a particular class, considering the spread and correlation of the data within each class. Unlike the Euclidean distance, which treats all dimensions equally, the Mahalanobis distance takes into account the covariance of the data, making it more effective for cases where the features are correlated or have different scales. This makes it particularly useful for multi-dimensional data, where the relationship between features is important for accurate classification. </li>
-						<b>Results:</b> The Mahalanobis distance-based classifier achieved promising results: 
-						<ul>
-							<li><b>For two-class wrist movement classification:</b> Achieved 72.28% accuracy.</li>
-							<li><b>For four-class wrist movement classification:</b> Achieved 33% accuracy.</li>
-						</ul>
-						This work provides valuable insights into the development of BCIs for restoring neural communication in individuals with conditions such as ALS and cerebral palsy.
-						<br><br>
-						<b>Conclusion:</b> This project highlights the potential of using MEG signals and advanced classification techniques to improve BCI systems, contributing to assistive technology development for individuals with severe motor impairments.
-					</div>
-					<div class="project-description">Note: This research project was conducted as part of my B-Tech in 2018</div>
-				</div>
 
 					
 				<!--Project 1: END-->
 
 				<!--Project 2: START-->
 				<div class="item">
-					<div class="project-title">An Innovative Eye tracking Technique to track eye on Large Screen Displays (MS Project)</div>
-					<div><code class="id_tags">Human Cognition</code> <code class="id_tags">Photogrammetry</code> <code class="id_tags">Ray Casting</code> <code class="id_tags">Python</code> <code class="id_tags">MATLAB</code></div>
-					
-					<div class="project-description">  Eye tracking is a technology used to monitor and analyze where and how a person moves their eyes. It helps researchers understand what a person is focusing on and thinking about, based on the eye-mind hypothesis, which suggests a connection between eye movements and cognitive processes like attention, perception, and decision-making.</div>
-					<div class="project-description">  We propose a novel methodology to analyze operators' cognitive behavior in collaborative control rooms by visualizing their gaze patterns and obtaining eye-tracking metrics. Traditional eye trackers are designed to capture gaze data on calibrated displays within a limited range. However, they are often inadequate for capturing gaze data on large overview displays, mainly due to the size of these screens and the limitations of single-eye tracking systems. To address this limitation, our approach extends gaze tracking to large overview displays by leveraging the gaze vector, a standard output of eye-tracking systems</div>
-					<div class="project-description">  This work constitutes a significant portion of my MS thesis at IIT Madras. However, detailed discussions are not possible at this stage as it is currently undergoing the patent filing process.</div>
+					<div class="project-title">Neural Network Development Using NumPy</div>
+					<div>
+						<code class="id_tags">Deep Learning</code> 
+						<code class="id_tags">NumPy</code> 
+						<code class="id_tags">Optimization Techniques</code> 
+						<code class="id_tags">Fashion-MNIST</code> 
+						<code class="id_tags">Python</code> 
+						<code class="id_tags">WandB</code>
+					</div>
+					<div class="project-description">
+						<b>Objective:</b> This project involved building neural networks from scratch using NumPy, focusing on understanding and implementing gradient descent and its variants. The Fashion-MNIST dataset was used for training, validation, and testing, with comparisons made using the MNIST dataset.<br><br>
+        
+						<b>Methodology:</b>
+						<ul>
+							<li><b>Dataset and Preprocessing:</b> Implemented data loading and preprocessing for the Fashion-MNIST dataset, dividing it into training, validation, and test sets. Dataset visualization was performed, and images were uploaded to the <a href="https://wandb.ai/" target="_blank">Weights and Biases</a> platform.</li>
+							<li><b>Model Components:</b>
+								<ul>
+									<li><b>Weight and Bias Initialization:</b> Developed functions for initializing weights and biases using random and Xavier initialization techniques.</li>
+									<li><b>Activation Functions:</b> Implemented sigmoid, tanh, ReLU, softmax, and their derivatives.</li>
+								</ul>
+							</li>
+							<li><b>Forward and Backward Propagation:</b>
+								<ul>
+									<li>Implemented forward propagation for calculating predictions.</li>
+									<li>Developed backward propagation and optimization algorithms, including mini-batch gradient descent, momentum gradient descent, NAG, RMSprop, Adam, and Nadam.</li>
+								</ul>
+							</li>
+							<li><b>Training and Evaluation:</b>
+								<ul>
+									<li>Integrated the training process with the Weights and Biases platform for parameter logging and hyperparameter sweeps.</li>
+									<li>Implemented functions for calculating loss, accuracy, and confusion matrices, with plots uploaded to WandB.</li>
+								</ul>
+							</li>
+						</ul>
+						<b>Results:</b>
+						<ul>
+							<li>The best-performing model, trained using mini-batch gradient descent, achieved 88% validation accuracy on the Fashion-MNIST dataset.</li>
+							<li>Extensive comparisons were made using different gradient descent variants, with results logged and visualized on the WandB platform.</li>
+						</ul>
+        
+						<b>Submission Details:</b> The project was submitted as part of a deep learning assignment and includes multiple organized Python scripts:
+						<ul>
+							<li><b>Data Preparation:</b> Scripts for data loading, preprocessing, and visualization.</li>
+							<li><b>Model Components:</b> Scripts for weight initialization, activation functions, and propagation methods.</li>
+							<li><b>Training and Logging:</b> A main script integrates the training pipeline with WandB and supports argparse for command-line execution.</li>
+							<li><b>Complete Code:</b> A single consolidated file containing all components for seamless execution.</li>
+						</ul>
+						<b>GitHub Code:</b> 
+						<ul>
+						<a href="https://github.com/HaiderAltaf/Neural-Network-from-Scratch-using-numpy/tree/branch-1" target="_blank">Click Here</a>
+						</ul>
+					</div>
 				</div>
+
+				
 			       <!--Project 2: END-->
 				
 			       <!--Project 3: START-->
-				
-				
 				<div class="item">
-					<div class="project-title">Assessing Team Performance in Control Rooms: Integrating Eye Tracking with Multimodal Data Analysis for Insights (MS Project)</div>
-					<div><code class="id_tags">Team Performance</code> <code class="id_tags">Voice Analysis</code> <code class="id_tags">Eye tracking</code> </div>
-					
-					<div class="project-description">  This project focuses on evaluating the performance of operators in control rooms and their teamwork, particularly in high-risk industries such as process industries and nuclear power plants. The goal is to understand how operators collaborate and perform tasks by analyzing their cognitive behavior using eye tracking, voice analysis amd process data. </div>
-					<br><br>
-					<div class="image-container">
-						<img src="images/Aiche24.jpg" alt="Project Image" class="project-image" style="max-width: 90%; height: auto;">					
+					<div class="project-title">CNN Implementation with PyTorch and Fine-tuning</div>
+					<div>
+						<code class="id_tags">Deep Learning</code>
+						<code class="id_tags">PyTorch</code>
+						<code class="id_tags">CNN</code>
+						<code class="id_tags">VGG16</code>
+						<code class="id_tags">iNaturalist Dataset</code>
+						<code class="id_tags">Hyperparameter Tuning</code>
 					</div>
-					<div class="project-description">Note: This research project is conducted as part of my MS thesis at IIT Madras</div>
+					<div class="project-description">
+						<b>Objective:</b> This project aimed to design and implement a Convolutional Neural Network (CNN) architecture from scratch and fine-tune a pre-trained VGG16 model using PyTorch for image classification tasks.<br><br>
+        
+						<b>Methodology:</b>
+						<ul>
+							<li><b>CNN Architecture:</b> Built a custom CNN architecture from scratch, optimizing it for the classification task.</li>
+							<li><b>Transfer Learning:</b> Fine-tuned the pre-trained VGG16 model to leverage existing feature extraction capabilities.</li>
+							<li><b>Dataset:</b> Utilized the <a href="https://www.inaturalist.org/" target="_blank">iNaturalist Dataset</a>, a complex dataset containing diverse natural images, for training and validation.</li>
+							<li><b>Hyperparameter Tuning:</b> Improved model performance by experimenting with learning rates, batch sizes, and optimization techniques.</li>
+						</ul>
+        
+						<b>Results:</b>
+						<ul>
+							<li>Achieved a validation accuracy of 79.55%, demonstrating the model's effectiveness in classifying complex and diverse images.</li>
+							<li>Highlighted the strength of combining a custom CNN architecture with transfer learning using a pre-trained VGG16 model.</li>
+						</ul>
+						<b>GitHub Code:</b> 
+						<ul>
+						<a href="https://github.com/HaiderAltaf/CNN-model-from-scratch-using-pytorch-and-transfer-learning" target="_blank">Click Here</a>
+						</ul>
+					</div>
 				</div>
+
+				
+				
 				<!--Project 3: END-->
 				
 
 			</section>
+			
+<!----------------------------------------------------ACADEMIC PROJECTS END---------------------------------------------------------------------------------------->	
 			
 <!----------------------------------------------------PUBLICATION START--------------------------------------------------------------------------------------->			
 			<h1 class="heading" id="publications" name="publications">Publications</h1>
