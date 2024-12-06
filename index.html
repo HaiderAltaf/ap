@@ -405,12 +405,12 @@
 
 <!----------------------------------------------------PROJECTS START---------------------------------------------------------------------------------------->	
 
-			<h1 class="heading" id="projects" name="projectsml">Projects</h1>
+			<h1 class="heading" id="projects" name="projectsml">Research Projects</h1>
 			<section class="grid-collection">
 				
 				<!--Project 1: START-->
 				<div class="item">
-					<div class="project-title">Feature Extraction and Classification of Brain Signals for Brain-Computer Interface Applications</div>
+					<div class="project-title">Feature Extraction and Classification of Brain Signals for Brain-Computer Interface Applications (B-Tech Project)</div>
 					<div>
 						<code class="id_tags">Brain-Computer Interface</code> 
 						<code class="id_tags">Feature Extraction</code> 
@@ -450,7 +450,7 @@
 
 				<!--Project 2: START-->
 				<div class="item">
-					<div class="project-title">An Innovative Eye tracking Technique to track eye on Large Screen Displays</div>
+					<div class="project-title">An Innovative Eye tracking Technique to track eye on Large Screen Displays (MS Project)</div>
 					<div><code class="id_tags">Human Cognition</code> <code class="id_tags">Photogrammetry</code> <code class="id_tags">Ray Casting</code> <code class="id_tags">Python</code> <code class="id_tags">MATLAB</code></div>
 					
 					<div class="project-description">  Eye tracking is a technology used to monitor and analyze where and how a person moves their eyes. It helps researchers understand what a person is focusing on and thinking about, based on the eye-mind hypothesis, which suggests a connection between eye movements and cognitive processes like attention, perception, and decision-making.</div>
@@ -463,20 +463,112 @@
 				
 				
 				<div class="item">
-					<div class="project-title">Assessing Team Performance in Control Rooms: Integrating Eye Tracking with Multimodal Data Analysis for Insights</div>
+					<div class="project-title">Assessing Team Performance in Control Rooms: Integrating Eye Tracking with Multimodal Data Analysis for Insights (MS Project)</div>
 					<div><code class="id_tags">Team Performance</code> <code class="id_tags">Voice Analysis</code> <code class="id_tags">Eye tracking</code> </div>
 					
-					<div class="project-description">  This project focuses on evaluating the performance of teams in control rooms, particularly in high-stakes environments such as industrial settings. The goal is to understand how teams collaborate and perform tasks by analyzing operators' cognitive behavior using eye tracking, voice analysis amd process data. </div>
+					<div class="project-description">  This project focuses on evaluating the performance of operators in control rooms and their teamwork, particularly in high-risk industries such as process industries and nuclear power plants. The goal is to understand how operators collaborate and perform tasks by analyzing their cognitive behavior using eye tracking, voice analysis amd process data. </div>
+					<br><br>
 					<div class="image-container">
 						<img src="images/Aiche24.jpg" alt="Project Image" class="project-image" style="max-width: 90%; height: auto;">					
 					</div>
-					<div class="project-description">Note: This research project was conducted as part of my MS thesis at IIT Madras</div>
+					<div class="project-description">Note: This research project is conducted as part of my MS thesis at IIT Madras</div>
 				</div>
 				<!--Project 3: END-->
 				
 
 			</section>
-<!----------------------------------------------------PROJECTS END---------------------------------------------------------------------------------------->	
+<!----------------------------------------------------RESEARCH PROJECTS END---------------------------------------------------------------------------------------->	
+
+<!----------------------------------------------------OTHER PROJECTS END---------------------------------------------------------------------------------------->	
+			<h1 class="heading" id="projects" name="projectsml">Academic Projects</h1>
+			<section class="grid-collection">
+				
+				<!--Project 1: START-->
+				<div class="item">
+					<div class="project-title">Colon Polyp Detection using UNet Architecture</div>
+					<div><code class="id_tags">Deep Learning</code> <code class="id_tags">UNet</code> <code class="id_tags">Python</code> <code class="id_tags">Medical Imaging</code> <code class="id_tags">Semantic Segmentation</code></div>
+					<div class="project-description">
+						<b>Objective:</b> This project focuses on developing a deep learning model based on the UNet architecture to assist in the early detection of colorectal cancer. By segmenting polyps from colonoscopy images, the system aids in early diagnosis and treatment.<br><br>
+						<div class="image-container">
+						<img src="images/polyp.jpg" alt="Project Image" class="project-image" style="max-width: 40%; height: auto;">					
+						</div>
+						<b>Methodology:</b> 
+						<ul>
+							<li>Used the UNet architecture for semantic segmentation of colonoscopy images.</li>
+							<li>Trained the model on a dataset organized with separate training and validation splits for images and masks.</li>
+							<li>Performed inference using pre-trained weights to predict the presence of polyps.</li>
+							<li>Evaluated the model using accuracy, precision, recall, and F1-score metrics.</li>
+						</ul>
+						<b>Key Features:</b> 
+						<ul>
+							<li>Customizable training parameters such as epochs, batch size, and learning rate.</li>
+							<li>Utilized CVC-612 dataset for effective training and evaluation. The dataset contains image of the colon with polyp and it's binary mask for ground truth</li>
+						</ul>
+
+						<b>Results:</b> The model demonstrated effective segmentation capabilities, with validation accuracy of 96.24%. Example segmented images provided insights into its practical utility.<br><br>
+						<b>GitHub Code:</b> 
+						<ul>
+						<a href="https://github.com/HaiderAltaf/Polyp-cancer--segmentation-in-colon-image" target="_blank">Click Here</a>
+						</ul>
+					</div>
+				</div>
+
+					<div class="image-container">
+						<img src="images/b-tech_pic2.jpg" alt="Project Image" class="project-image">					
+					</div>
+					<div class="project-description">
+						<b>Objective:</b> The project aimed to decode wrist movements using Magnetoencephalography (MEG) signals for Brain-Computer Interface (BCI) applications. The goal was to enable assistive technologies for individuals with neuromuscular disorders, improving their ability to interact with external devices.
+						<br><br>
+						<b>Methodology:</b> 
+						<ul>
+							<li><b>Data Source:</b> MEG signals were sourced from Dataset 3 of the BCI Competition IV, recorded during wrist movements in four directions: right, left, back, and forth.</li>
+							<li><b>Signal Processing:</b> The MEG data was preprocessed to remove noise and artifacts. Multi-resolution statistical features like energy, IQR, COVFF, and NCV were extracted using Wavelet Packet Transform (WPT) and Discrete Wavelet Transform (DWT).</li>
+							<li><b>Feature Selection:</b> Principal Component Analysis (PCA) was applied to rank and select the most relevant features for classification.</li>
+							<li><b>Classification:</b> The Mahalanobis Distance-Based Classifier was utilized for classifying the data. This classifier works by measuring the distance between a given data point and the mean of a particular class, considering the spread and correlation of the data within each class. Unlike the Euclidean distance, which treats all dimensions equally, the Mahalanobis distance takes into account the covariance of the data, making it more effective for cases where the features are correlated or have different scales. This makes it particularly useful for multi-dimensional data, where the relationship between features is important for accurate classification. </li>
+						<b>Results:</b> The Mahalanobis distance-based classifier achieved promising results: 
+						<ul>
+							<li><b>For two-class wrist movement classification:</b> Achieved 72.28% accuracy.</li>
+							<li><b>For four-class wrist movement classification:</b> Achieved 33% accuracy.</li>
+						</ul>
+						This work provides valuable insights into the development of BCIs for restoring neural communication in individuals with conditions such as ALS and cerebral palsy.
+						<br><br>
+						<b>Conclusion:</b> This project highlights the potential of using MEG signals and advanced classification techniques to improve BCI systems, contributing to assistive technology development for individuals with severe motor impairments.
+					</div>
+					<div class="project-description">Note: This research project was conducted as part of my B-Tech in 2018</div>
+				</div>
+
+					
+				<!--Project 1: END-->
+
+				<!--Project 2: START-->
+				<div class="item">
+					<div class="project-title">An Innovative Eye tracking Technique to track eye on Large Screen Displays (MS Project)</div>
+					<div><code class="id_tags">Human Cognition</code> <code class="id_tags">Photogrammetry</code> <code class="id_tags">Ray Casting</code> <code class="id_tags">Python</code> <code class="id_tags">MATLAB</code></div>
+					
+					<div class="project-description">  Eye tracking is a technology used to monitor and analyze where and how a person moves their eyes. It helps researchers understand what a person is focusing on and thinking about, based on the eye-mind hypothesis, which suggests a connection between eye movements and cognitive processes like attention, perception, and decision-making.</div>
+					<div class="project-description">  We propose a novel methodology to analyze operators' cognitive behavior in collaborative control rooms by visualizing their gaze patterns and obtaining eye-tracking metrics. Traditional eye trackers are designed to capture gaze data on calibrated displays within a limited range. However, they are often inadequate for capturing gaze data on large overview displays, mainly due to the size of these screens and the limitations of single-eye tracking systems. To address this limitation, our approach extends gaze tracking to large overview displays by leveraging the gaze vector, a standard output of eye-tracking systems</div>
+					<div class="project-description">  This work constitutes a significant portion of my MS thesis at IIT Madras. However, detailed discussions are not possible at this stage as it is currently undergoing the patent filing process.</div>
+				</div>
+			       <!--Project 2: END-->
+				
+			       <!--Project 3: START-->
+				
+				
+				<div class="item">
+					<div class="project-title">Assessing Team Performance in Control Rooms: Integrating Eye Tracking with Multimodal Data Analysis for Insights (MS Project)</div>
+					<div><code class="id_tags">Team Performance</code> <code class="id_tags">Voice Analysis</code> <code class="id_tags">Eye tracking</code> </div>
+					
+					<div class="project-description">  This project focuses on evaluating the performance of operators in control rooms and their teamwork, particularly in high-risk industries such as process industries and nuclear power plants. The goal is to understand how operators collaborate and perform tasks by analyzing their cognitive behavior using eye tracking, voice analysis amd process data. </div>
+					<br><br>
+					<div class="image-container">
+						<img src="images/Aiche24.jpg" alt="Project Image" class="project-image" style="max-width: 90%; height: auto;">					
+					</div>
+					<div class="project-description">Note: This research project is conducted as part of my MS thesis at IIT Madras</div>
+				</div>
+				<!--Project 3: END-->
+				
+
+			</section>
 			
 <!----------------------------------------------------PUBLICATION START--------------------------------------------------------------------------------------->			
 			<h1 class="heading" id="publications" name="publications">Publications</h1>
